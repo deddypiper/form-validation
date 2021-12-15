@@ -12,16 +12,16 @@ function error (color) {
 const validateForm = (event) => { 
     const validation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (names.value.length < 3 || names.value === "") {
-        error("black")
+        error("#fa5959")
         warning.textContent = "PLEASE ENTER A VALID NAME!!!"; console.log('me');
             event.preventDefault()
     }   else if (!validation.test(email.value)) {console.log('me');
-        error("black")
+        error("#fa5959")
         warning.textContent = "PLEASE ENTER A VALID EMAIL!!!"
         event.preventDefault()
     } 
     else if ((token.value == "") || (token.value.length <  8)) {
-        error('black')
+        error('#fa5959')
         warning.textContent = "INVALID TOKEN!!!"
             event.preventDefault()
     } 
